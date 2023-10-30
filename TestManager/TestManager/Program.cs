@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Management.Automation;             //手動加入參考
 using System.Management.Automation.Runspaces;   //手動加入參考
 using System.Threading;
+using System.Reflection;
 
 namespace TestManager
 {
@@ -193,6 +194,34 @@ namespace TestManager
             }
              return;
         }
+
+        // ***** Executing a dll *****
+        static void Execute_dll(string myJob)
+        {
+            try
+            {
+                Assembly myDll = Assembly.LoadFile(myJob);
+                var myTest=myDll.GetTypes().First(m=>!m.IsAbstract && m.IsClass);
+                object myObj = myDll.CreateInstance(myTest.FullName);
+                object a = myTest.GetMethod("C51").Invoke(myObj, new object[]{20, 5});            
+                process_log(a.ToString());
+                a = myTest.GetMethod("C52").Invoke(myObj, new object[]{20, 5});            
+                process_log(a.ToString());
+                a = myTest.GetMethod("C53").Invoke(myObj, new object[]{20, 5});            
+                process_log(a.ToString());
+                a = myTest.GetMethod("C54").Invoke(myObj, new object[]{20, 5});            
+                process_log(a.ToString());
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                process_log("找不到DLL檔案");
+            }
+            return;
+        }
+
+
+        // ============== MAIN ==============
+
         static void Main(string[] args)
         {
             string[] Job_List;
@@ -232,6 +261,11 @@ namespace TestManager
                     {
                         process_log("  Item["+job_index+"] -> 執行"+downloadPath+job);
                         Executing(downloadPath+job);
+                    }
+                    else if(job.EndsWith(".dll", StringComparison.OrdinalIgnoreCase))
+                    {
+                        process_log("  Item["+job_index+"] -> 執行"+downloadPath+job);
+                        Execute_dll(downloadPath+job);
                     }
                     else
                     {
