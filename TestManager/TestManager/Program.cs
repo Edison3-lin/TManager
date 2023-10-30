@@ -203,18 +203,19 @@ namespace TestManager
                 Assembly myDll = Assembly.LoadFile(myJob);
                 var myTest=myDll.GetTypes().First(m=>!m.IsAbstract && m.IsClass);
                 object myObj = myDll.CreateInstance(myTest.FullName);
-                object a = myTest.GetMethod("C51").Invoke(myObj, new object[]{20, 5});            
-                process_log(a.ToString());
-                a = myTest.GetMethod("C52").Invoke(myObj, new object[]{20, 5});            
-                process_log(a.ToString());
-                a = myTest.GetMethod("C53").Invoke(myObj, new object[]{20, 5});            
-                process_log(a.ToString());
-                a = myTest.GetMethod("C54").Invoke(myObj, new object[]{20, 5});            
-                process_log(a.ToString());
+                object myResult = myTest.GetMethod("Setup").Invoke(myObj, new object[]{});            
+                process_log(myResult.ToString());
+                myResult = myTest.GetMethod("Run").Invoke(myObj, new object[]{});            
+                process_log(myResult.ToString());
+                myResult = myTest.GetMethod("UpdateResults").Invoke(myObj, new object[]{});            
+                process_log(myResult.ToString());
+                myResult = myTest.GetMethod("TearDown").Invoke(myObj, new object[]{});            
+                process_log(myResult.ToString());
             }
-            catch (System.IO.FileNotFoundException)
+            catch (Exception ex)
             {
-                process_log("找不到DLL檔案");
+                process_log("Error!!! " + ex.Message);
+            // catch (System.IO.FileNotFoundException)
             }
             return;
         }
