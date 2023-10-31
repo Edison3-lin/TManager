@@ -11,7 +11,7 @@ using System.Reflection;
 
 namespace TestManager
 {
-    internal class Program
+    class Program
     {
         public static string testPath = "C:\\TestManager\\";
         public static string downloadPath = "C:\\TestManager\\Download\\";
@@ -196,28 +196,34 @@ namespace TestManager
         }
 
         // ***** Executing a dll *****
-        static void Execute_dll(string myJob)
+        static bool Execute_dll(string dllPath)
         {
+            string callingDomainName = AppDomain.CurrentDomain.FriendlyName;//Thread.GetDomain().FriendlyName;
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+            AppDomain ad = AppDomain.CreateDomain("DLL Load/Unload");
+            ProxyObject obj = (ProxyObject)ad.CreateInstanceFromAndUnwrap(basePath+callingDomainName, "TestManager.ProxyObject");
             try
             {
-                Assembly myDll = Assembly.LoadFile(myJob);
-                var myTest=myDll.GetTypes().First(m=>!m.IsAbstract && m.IsClass);
-                object myObj = myDll.CreateInstance(myTest.FullName);
-                object myResult = myTest.GetMethod("Setup").Invoke(myObj, new object[]{});            
-                process_log(myResult.ToString());
-                myResult = myTest.GetMethod("Run").Invoke(myObj, new object[]{});            
-                process_log(myResult.ToString());
-                myResult = myTest.GetMethod("UpdateResults").Invoke(myObj, new object[]{});            
-                process_log(myResult.ToString());
-                myResult = myTest.GetMethod("TearDown").Invoke(myObj, new object[]{});            
-                process_log(myResult.ToString());
+                obj.LoadAssembly(dllPath);
             }
-            catch (Exception ex)
+            catch (System.IO.FileNotFoundException)
             {
-                process_log("Error!!! " + ex.Message);
-            // catch (System.IO.FileNotFoundException)
+                process_log("!!! 找不到 "+dllPath);
+                return false;
             }
-            return;
+            Object[] p = new object[]{};
+            process_log("             Invoke .Setup()");
+            obj.Invoke("Setup", p);
+            process_log("             Invoke .Run()");
+            obj.Invoke("Run", p);
+            process_log("             Invoke .UpdateResults()");
+            obj.Invoke("UpdateResults", p);
+            process_log("             Invoke .TearDown()");
+            obj.Invoke("TearDown", p);
+            process_log("             Unload "+dllPath);
+            AppDomain.Unload(ad);
+            obj = null;
+            return true;
         }
 
 
@@ -298,4 +304,29 @@ namespace TestManager
             Environment.Exit(0);            
         }
     }
+
+    class ProxyObject : MarshalByRefObject
+    {
+        Assembly assembly = null;
+        public void LoadAssembly(string myDllPath)
+        {
+            assembly = Assembly.LoadFile(myDllPath);
+        }
+        public bool Invoke(string methodName, params Object[] args)
+        {
+            if (assembly == null)
+                return false;
+            var cName=assembly.GetTypes().First(m=>!m.IsAbstract && m.IsClass);
+            string fullClassName = cName.FullName;
+            Type tp = assembly.GetType(fullClassName);
+            if (tp == null)
+                return false;
+            MethodInfo method = tp.GetMethod(methodName);
+            if (method == null)
+                return false;
+            Object obj = Activator.CreateInstance(tp);
+            method.Invoke(obj, args);
+            return true;
+        }
+    }    
 }

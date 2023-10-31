@@ -5,3 +5,10 @@ C:\Users\edison\Downloads\C#\TestManager\TestManager\bin\Debug\TestManager.exe
 C:\Users\edison\Downloads\C#\TestManager\TestManager\bin\Debug\TestManager.pdb
 C:\Users\edison\Downloads\C#\TestManager\TestManager\obj\Debug\TestManager.exe
 C:\Users\edison\Downloads\C#\TestManager\TestManager\obj\Debug\TestManager.pdb
+C:\TestManager\TestManager\TestManager\bin\Debug\TestManager.exe.config
+C:\TestManager\TestManager\TestManager\bin\Debug\TestManager.exe
+C:\TestManager\TestManager\TestManager\bin\Debug\TestManager.pdb
+C:\TestManager\TestManager\TestManager\obj\Debug\TestManager.csproj.AssemblyReference.cache
+C:\TestManager\TestManager\TestManager\obj\Debug\TestManager.csproj.CoreCompileInputs.cache
+C:\TestManager\TestManager\TestManager\obj\Debug\TestManager.exe
+C:\TestManager\TestManager\TestManager\obj\Debug\TestManager.pdb
