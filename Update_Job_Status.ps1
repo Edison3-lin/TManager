@@ -23,7 +23,7 @@ $outputfile = $Directory+'\'+$baseName+'_result.log'
 # $UserName   = 'Captain001'
 # $Password   = 'Captaintest2023@SIT'
 
-$Database   = 'Job'
+$Database   = 'SIT_TEST'
 $Server     = '"DESKTOP-VD92848"'
 $UserName   = 'edison'
 $Password   = '123'
@@ -54,7 +54,7 @@ $SqlCmd.connection = $SqlConn
 $UUID = Get-WmiObject Win32_ComputerSystemProduct | Select-Object -ExpandProperty UUID 
 Write-Host $UUID
 # Read SQL data
-$sqlCmd.CommandText = "SELECT [DP_ID],[DP_UUID],[DP_Status] FROM [Job].[DBO].[DUT_Profile]"
+$sqlCmd.CommandText = "SELECT [DP_ID],[DP_UUID],[DP_Status] FROM [SIT_TEST].[DBO].[DUT_Profile]"
 $adapter = New-Object System.Data.SqlClient.SqlDataAdapter $sqlCmd
 $dataset = New-Object System.Data.DataSet
 $NULL = $adapter.Fill($dataSet)

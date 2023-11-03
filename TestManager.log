@@ -1,0 +1,40 @@
+[2023/11/3 PM 02:40:14] <<Step 1>> Got 1 items in total
+[2023/11/3 PM 02:40:14] <<Step 2>> Download Job_List items
+[2023/11/3 PM 02:40:14] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/3 PM 02:40:14]   Item[1] -> 執行 DLL
+[2023/11/3 PM 02:40:14]              C:\TestManager\Download\TestItem_all.dll
+[2023/11/3 PM 02:40:14] 81
+[2023/11/3 PM 02:40:14] Common Error!!! 引動過程的目標傳回例外狀況。
+[2023/11/3 PM 02:40:14] <<Step 4>> 測試結束，把job status改為completed_
+[2023/11/3 PM 02:40:14] <<Step 5>> Job_List 的測項完成，Keep listening job status
+[2023/11/3 PM 02:40:14] 執行花費時間: 0分鐘 0秒
+[2023/11/3 PM 02:40:14] =================Completed================
+[2023/11/3 PM 02:40:27] **** Exit ****
+[2023/11/3 PM 02:42:51] <<Step 1>> Got 1 items in total
+[2023/11/3 PM 02:42:51] <<Step 2>> Download Job_List items
+[2023/11/3 PM 02:42:51] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/3 PM 02:42:51]   Item[1] -> 執行 DLL
+[2023/11/3 PM 02:42:51]              C:\TestManager\Download\TestItem_all.dll
+[2023/11/3 PM 02:42:51] 81
+[2023/11/3 PM 02:42:51]              c:\TestManager\Download\TestItem1.dll
+[2023/11/3 PM 02:42:51] Testflow.Setup
+[2023/11/3 PM 02:42:51] 11
+[2023/11/3 PM 02:43:40] Testflow.Run
+[2023/11/3 PM 02:43:40] 12
+[2023/11/3 PM 02:43:40] Testflow.UpdateResults
+[2023/11/3 PM 02:43:40] 13
+[2023/11/3 PM 02:43:40] Testflow.TearDown
+[2023/11/3 PM 02:43:40] 14
+[2023/11/3 PM 02:43:40]              c:\TestManager\Download\TestItem2.dll
+[2023/11/3 PM 02:43:40] 21
+[2023/11/3 PM 02:44:41] 22
+[2023/11/3 PM 02:44:41] 23
+[2023/11/3 PM 02:44:41] 24
+[2023/11/3 PM 02:44:41] 82
+[2023/11/3 PM 02:44:41] 83
+[2023/11/3 PM 02:44:41] 84
+[2023/11/3 PM 02:44:41] <<Step 4>> 測試結束，把job status改為completed_
+[2023/11/3 PM 02:44:41] <<Step 5>> Job_List 的測項完成，Keep listening job status
+[2023/11/3 PM 02:44:41] 執行花費時間: 1分鐘 49秒
+[2023/11/3 PM 02:44:41] =================Completed================
+[2023/11/3 PM 02:50:14] **** Exit ****

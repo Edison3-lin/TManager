@@ -11,7 +11,7 @@ using System.Reflection;
 
 namespace TestManager
 {
-    class Program
+    public class Program
     {
         public static string testPath = "C:\\TestManager\\";
         public static string downloadPath = "C:\\TestManager\\Download\\";
@@ -45,7 +45,7 @@ namespace TestManager
         }
 
         // **** Test manager log file ****
-        static void process_log(string content)
+        public static void process_log(string content)
         {
             // 指定要建立或寫入的檔案的路徑
             string filePath = testPath+log_file;
@@ -75,7 +75,7 @@ namespace TestManager
             Pipeline pipeline = runspace.CreatePipeline();
         try
         {
-            pipeline.Commands.AddScript(testPath+"RunAs.ps1");
+            // pipeline.Commands.AddScript(testPath+"RunAs.ps1");
             pipeline.Commands.AddScript(testPath+"Get_Job.ps1");
             var result = pipeline.Invoke();
             foreach (var psObject in result)
@@ -113,7 +113,7 @@ namespace TestManager
 
         try
         {
-            pipeline.Commands.AddScript(testPath+"RunAs.ps1");
+            // pipeline.Commands.AddScript(testPath+"RunAs.ps1");
             string remoteFile = "@(\"";
             foreach (string job in job_list)
             {
@@ -147,7 +147,7 @@ namespace TestManager
 
             try
             {
-                pipeline.Commands.AddScript(testPath+"RunAs.ps1");
+                // pipeline.Commands.AddScript(testPath+"RunAs.ps1");
                 pipeline.Commands.AddScript(testPath+"Update_Job_Status.ps1");
                 var result = pipeline.Invoke();
                 if(result[0].ToString() == "Unconnected_")
@@ -176,7 +176,7 @@ namespace TestManager
              Runspace runspace = RunspaceFactory.CreateRunspace();
              runspace.Open();
              Pipeline pipeline = runspace.CreatePipeline();
-             pipeline.Commands.AddScript(testPath+"RunAs.ps1");
+            //  pipeline.Commands.AddScript(testPath+"RunAs.ps1");
              if (!File.Exists(job))
              {
                  process_log("Error!!! File not exist");
@@ -200,27 +200,28 @@ namespace TestManager
         {
             string callingDomainName = AppDomain.CurrentDomain.FriendlyName;//Thread.GetDomain().FriendlyName;
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
-            AppDomain ad = AppDomain.CreateDomain("DLL Load/Unload");
+            AppDomain ad = AppDomain.CreateDomain("TestManager DLL");
             ProxyObject obj = (ProxyObject)ad.CreateInstanceFromAndUnwrap(basePath+callingDomainName, "TestManager.ProxyObject");
             try
             {
-                obj.LoadAssembly(dllPath);
+                obj.LoadAssembly("c:\\TestManager\\TestManager\\Common\\bin\\Debug\\Common.dll");
             }
             catch (System.IO.FileNotFoundException)
             {
-                process_log("!!! 找不到 "+dllPath);
+                process_log("!!! 找不到 Common.dll");
                 return false;
             }
-            Object[] p = new object[]{};
-            process_log("             Invoke .Setup()");
-            obj.Invoke("Setup", p);
-            process_log("             Invoke .Run()");
-            obj.Invoke("Run", p);
-            process_log("             Invoke .UpdateResults()");
-            obj.Invoke("UpdateResults", p);
-            process_log("             Invoke .TearDown()");
-            obj.Invoke("TearDown", p);
-            process_log("             Unload "+dllPath);
+            Object[] p = new object[]{dllPath};
+            obj.Invoke("RunTestItem",p);
+            // process_log("             Invoke .Setup()");
+            // obj.Invoke("Setup", p);
+            // process_log("             Invoke .Run()");
+            // obj.Invoke("Run", p);
+            // process_log("             Invoke .UpdateResults()");
+            // obj.Invoke("UpdateResults", p);
+            // process_log("             Invoke .TearDown()");
+            // obj.Invoke("TearDown", p);
+            // process_log("             Unload "+dllPath);
             AppDomain.Unload(ad);
             obj = null;
             return true;
@@ -258,7 +259,7 @@ namespace TestManager
                 FTP_Download(Job_List);
 
                 // step 3. 依序執行Job_List的PowerShell程式
-                process_log("<<Step 3>> 依序執行Job_List的PowerShell程式");
+                process_log("<<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式");
                 job_index = 0;
                 startTime = DateTime.Now;
                 foreach (string job in Job_List)
@@ -271,8 +272,15 @@ namespace TestManager
                     }
                     else if(job.EndsWith(".dll", StringComparison.OrdinalIgnoreCase))
                     {
-                        process_log("  Item["+job_index+"] -> 執行"+downloadPath+job);
-                        Execute_dll(downloadPath+job);
+                        process_log("  Item["+job_index+"] -> 執行 DLL");
+                        try
+                        {
+                            Execute_dll(downloadPath+job);
+                        }
+                        catch (Exception ex)
+                        {
+                            process_log("Run test Error!!! " + ex.Message);
+                        }
                     }
                     else
                     {
