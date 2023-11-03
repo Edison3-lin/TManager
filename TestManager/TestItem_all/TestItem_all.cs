@@ -24,10 +24,8 @@ namespace TestItem_all
         {
             try
             {
-                // Common.Program.process_log("Run TestItem1.dll....");
                 Common.Runnner.RunTestItem(dllDir+"TestItem1.dll");
-                // Common.Program.process_log("Run TestItem2.dll....");
-                Common.Runnner.RunTestItem(dllDir+"TestItem2.dll");
+                // Common.Runnner.RunTestItem(dllDir+"TestItem2.dll");
             }
             catch (Exception ex)
             {

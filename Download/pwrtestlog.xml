@@ -1,0 +1,43 @@
+<PwrTestLog date="11/03/2023" time="15:10:50" filename="C:\TestManager\Download\pwrtestlog.xml">
+  <SystemInformation>
+    <ComputerName>DESKTOP-VD92848</ComputerName>
+    <OSBuildNumber>22621</OSBuildNumber>
+    <SystemManufacturer>Acer</SystemManufacturer>
+    <SystemProductName>Predator PH16-71</SystemProductName>
+    <BIOSVersion>V1.15</BIOSVersion>
+    <BIOSReleaseDate>09/07/2023</BIOSReleaseDate>
+    <ProcessorCount>32</ProcessorCount>
+    <ProcessorPackageCount>1</ProcessorPackageCount>
+  </SystemInformation>
+  <SYSTEM_POWER_CAPABILITIES>
+    <SystemS1StateSupported>0</SystemS1StateSupported>
+    <SystemS2StateSupported>0</SystemS2StateSupported>
+    <SystemS3StateSupported>1</SystemS3StateSupported>
+    <SystemS4StateSupported>1</SystemS4StateSupported>
+    <SystemS5StateSupported>1</SystemS5StateSupported>
+    <WakeAlarmPresent>0</WakeAlarmPresent>
+    <AcOnLineWakeSupported>0</AcOnLineWakeSupported>
+    <RtcWakeSupported>4</RtcWakeSupported>
+    <FastSystemS4>1</FastSystemS4>
+    <VideoDimPresent>1</VideoDimPresent>
+    <HiberFilePresent>1</HiberFilePresent>
+    <AoAc>0</AoAc>
+  </SYSTEM_POWER_CAPABILITIES>
+  <SleepScenario>
+    <SleepTransitions hybrid="0" delay="30" sleeptime="40" IgnoreUsbHub="0" EndTransitionEventTimeout="120">
+      <SleepTransition number="0" status="4980828">
+        <StartT>11/03/2023 15:10:51</StartT>
+        <EndT>11/03/2023 15:11:34</EndT>
+        <Duration>00:00:42</Duration>
+        <TargetState>3</TargetState>
+        <EffectiveState>3</EffectiveState>
+        <Suspend>4486</Suspend>
+        <BIOSInit>2252</BIOSInit>
+        <DriverInit>1981</DriverInit>
+        <HiberPagesWritten>0</HiberPagesWritten>
+        <HiberRead>0</HiberRead>
+        <HiberWrite>0</HiberWrite>
+      </SleepTransition>
+    </SleepTransitions>
+  </SleepScenario>
+</PwrTestLog>
