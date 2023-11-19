@@ -1,0 +1,6 @@
+C:\TestManager\TestManager\Get_Job\bin\Debug\Get_Job.dll
+C:\TestManager\TestManager\Get_Job\bin\Debug\Get_Job.pdb
+C:\TestManager\TestManager\Get_Job\obj\Debug\Get_Job.csproj.AssemblyReference.cache
+C:\TestManager\TestManager\Get_Job\obj\Debug\Get_Job.csproj.CoreCompileInputs.cache
+C:\TestManager\TestManager\Get_Job\obj\Debug\Get_Job.dll
+C:\TestManager\TestManager\Get_Job\obj\Debug\Get_Job.pdb

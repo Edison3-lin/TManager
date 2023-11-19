@@ -1,0 +1,7 @@
+C:\TestManager\TestManager\SQL\bin\Debug\SQL.exe.config
+C:\TestManager\TestManager\SQL\bin\Debug\SQL.exe
+C:\TestManager\TestManager\SQL\bin\Debug\SQL.pdb
+C:\TestManager\TestManager\SQL\obj\Debug\SQL.csproj.AssemblyReference.cache
+C:\TestManager\TestManager\SQL\obj\Debug\SQL.csproj.CoreCompileInputs.cache
+C:\TestManager\TestManager\SQL\obj\Debug\SQL.exe
+C:\TestManager\TestManager\SQL\obj\Debug\SQL.pdb

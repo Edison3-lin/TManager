@@ -11,12 +11,12 @@ namespace TestItem2
 {
     public class TestItem2
     {
+        private const string DllName = "TestItem2";
 
         public int Setup()
         {
             // common.Setup
-            Console.WriteLine("Item2 Setup........");            
-            // Testflow.Setup(DllName);
+            Testflow.Setup(DllName);
 
             return 21;
         }
@@ -28,8 +28,8 @@ namespace TestItem2
              Runspace runspace = RunspaceFactory.CreateRunspace();
              runspace.Open();
              Pipeline pipeline = runspace.CreatePipeline();
-            //  pipeline.Commands.AddScript("c:\\TestManager\\Common\\RunAs.ps1");             
-             pipeline.Commands.AddScript("c:\\TestManager\\Common\\S4.ps1");
+            //  pipeline.Commands.AddScript("c:\\TestManager\\CommonLibs\\RunAs.ps1");             
+             pipeline.Commands.AddScript("c:\\TestManager\\CommonLibs\\Abt1.ps1");
              pipeline.Invoke();
              runspace.Close();
             }
@@ -39,22 +39,19 @@ namespace TestItem2
             }
 
             // common.Setup
-            // Testflow.Run(DllName);
-            Console.WriteLine("Item2 Run........");            
+            Testflow.Run("TestItem2");
             return 22;
         }
 
         public int UpdateResults()
         {
-            // Testflow.UpdateResults(DllName, true);
-            Console.WriteLine("Item2 UpdateResults........");            
+            Testflow.UpdateResults(DllName, true);
             return 23;
         }
 
         public int TearDown()
         {
-            // Testflow.TearDown(DllName);
-            Console.WriteLine("Item2 TearDown........");            
+            Testflow.TearDown(DllName);
             return 24;
         }
 

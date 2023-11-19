@@ -1,0 +1,2388 @@
+Start: PwrTest
+
+
+SYSTEM_POWER_CAPABILITIES 
+    SystemS1StateSupported = 0 
+    SystemS2StateSupported = 0 
+    SystemS3StateSupported = 1 
+    SystemS4StateSupported = 1 
+    SystemS5StateSupported = 1 
+    WakeAlarmPresent       = 0 
+    AcOnLineWakeSupported  = 0 
+    RtcWakeSupported       = S4 
+    FastSystemS4           = 1 
+    VideoDimPresent        = 1 
+    HiberFilePresent       = 1 
+    AoAc                   = 0 
+
+
+
+SYSTEM_POWER_INFORMATION 
+    MaxIdlenessAllowed = 0 
+    Idleness           = 87 
+    TimeRemaining      = -1 
+    CoolingMode        = 0 
+
+
+
+SYSTEM_BATTERY_STATE 
+    AcOnLine           = 1 
+    BatteryPresent     = 1 
+    Charging           = 0 
+    Discharging        = 0 
+    MaxCapacity        = 87795 
+    RemainingCapacity  = 87795 
+    RateOfDrain        = 0 
+    EstimatedTime      = -1 
+    DefaultAlert1      = 3511 
+    DefaultAlert2      = 4620 
+
+
+ManufactureName: SIMPLO
+DeviceName: AP21A7T
+UniqueID: 197SIMPLOAP21A7T
+SerialNumber: 197
+
+BATTERY_INFORMATION
+  Capabilities: 
+    BATTERY_SYSTEM_BATTERY
+  Technology: Rechargeable
+Chemistry: LION
+  DesignedCapacity: 90013 mWh (or relative)
+  FullChargedCapacity: 87795 mWh (or relative)
+  CriticalBias: 0 mWh (or relative)
+  CycleCount: 8
+  DefaultAlert1: 3511
+  DefaultAlert2: 4620
+
+BATTERY_STATUS
+  PowerState: 
+    BATTERY_POWER_ON_LINE 
+  Capacitiy: 87795 mWh (or relative)
+  Voltage: 17382 millivolts
+  Rate: 0 mWh (or relative)
+  BatteryEstimatedTime: BATTERY_UNKNOWN_TIME
+
+
+
+
+Error: getCpuPerf: CpuInfoProcessor
+    File: base\power\tools\pwrtest\exe\scenarioinfo.cpp
+    Line: 535
+    Error Code: 0x1068
+InstanceName: PPM_Processor_0
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x1
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_1
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x2
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_2
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x4
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_3
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x8
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_4
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x10
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_5
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x20
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_6
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x40
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_7
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x80
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_8
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x100
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_9
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x200
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_10
+
+Kernel Idle States: (3 states)
+
+  TargetState:       0
+  Type:              0
+  TargetProcessors:  0x400
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_11
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x800
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_12
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x1000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_13
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x2000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_14
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x4000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_15
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x8000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_16
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x10000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_17
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x20000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_18
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x40000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_19
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x80000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_20
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x100000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_21
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x200000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_22
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x400000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_23
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x800000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_24
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x1000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_25
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x2000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_26
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x4000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_27
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x8000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_28
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x10000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_29
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x20000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_30
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x40000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_31
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x80000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+
+
+
+Error: getCpuPerf: CpuInfoProcessor
+    File: base\power\tools\pwrtest\exe\scenarioinfo.cpp
+    Line: 563
+    Error Code: 0x1068
+
+
+
+InstanceName: PPM_Processor_0
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x1
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_1
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x2
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_2
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x4
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_3
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x8
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_4
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x10
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_5
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x20
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_6
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x40
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_7
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x80
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_8
+
+Kernel Idle States: (3 states)
+
+  TargetState:       0
+  Type:              0
+  TargetProcessors:  0x100
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_9
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x200
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_10
+
+Kernel Idle States: (3 states)
+
+  TargetState:       0
+  Type:              0
+  TargetProcessors:  0x400
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_11
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x800
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_12
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x1000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_13
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x2000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_14
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x4000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_15
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x8000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_16
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x10000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_17
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x20000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_18
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x40000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_19
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x80000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_20
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x100000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_21
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x200000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_22
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x400000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_23
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x800000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_24
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x1000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_25
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x2000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_26
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x4000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_27
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x8000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_28
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x10000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_29
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x20000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_30
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x40000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+InstanceName: PPM_Processor_31
+
+Kernel Idle States: (3 states)
+
+  TargetState:       2
+  Type:              0
+  TargetProcessors:  0x80000000
+  State 0:
+    Latency:          1 us
+    Power:            1000 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C1
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 1:
+    Latency:          127 us
+    Power:            350 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C2
+    IdleHandler:      Present
+    Context:          NOTPresent
+  State 2:
+    Latency:          1048 us
+    Power:            200 mWatts
+    TimeCheck:        500000 QPC ticks (50 ms)
+    PromotePercent:   60%
+    DemotePercent:    40%
+    StateType:        C3
+    IdleHandler:      Present
+    Context:          NOTPresent
+
+
+
+End: Pass, PwrTest, (null)

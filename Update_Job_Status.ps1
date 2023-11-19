@@ -64,7 +64,7 @@ for ($i=0; $i -lt $dataSet.Tables[0].Rows.Count; $i++)
     $DP_UUID= $dataSet.Tables[0].Rows[$i][1]
     $DP_Status= $dataSet.Tables[0].Rows[$i][2]
 
-    if( ($DP_UUID -eq $UUID) -and ($DP_Status -eq 'Process_') )
+    if( ($DP_UUID -eq $UUID) -and ($DP_Status -eq 'New_') )
     {
         $SqlCmd.commandtext = "update DUT_Profile set DP_Status='Completed_' where DP_ID="+"'$DP_ID'"
         $NULL = $SqlCmd.executenonquery()

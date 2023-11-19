@@ -14,7 +14,7 @@ namespace TestManager
     public class Program
     {
         public static string testPath = "C:\\TestManager\\";
-        public static string downloadPath = "C:\\TestManager\\Download\\";
+        public static string downloadPath = "C:\\TestManager\\ItemDownload\\";
         public static string log_file = "TestManager.log";
         // **** 創建log file ****
         static void CreateDirectoryAndFile()
@@ -40,7 +40,7 @@ namespace TestManager
             }
             catch (Exception ex)
             {
-                process_log("Error!!! " + ex.Message);
+                // process_log("Error!!! " + ex.Message);
             }
         }
 
@@ -61,46 +61,58 @@ namespace TestManager
             }
             catch (Exception ex)
             {
-                process_log("Error!!! " + ex.Message);
+                Console.WriteLine("Error!!! " + ex.Message);
             }
         }      
         
         // ***** get jobs from DB *****
         static string[] Get_Job()
         {
-            string[] job_list = {};
-            CreateDirectoryAndFile();
-            Runspace runspace = RunspaceFactory.CreateRunspace();
-            runspace.Open();
-            Pipeline pipeline = runspace.CreatePipeline();
-        try
-        {
-            // pipeline.Commands.AddScript(testPath+"RunAs.ps1");
-            pipeline.Commands.AddScript(testPath+"Get_Job.ps1");
-            var result = pipeline.Invoke();
-            foreach (var psObject in result)
+
+string[] job_list = new string[0]{}; // 創建一個有3個元素的字串陣列
+
+
+            // string[] job_list = new string[]; 
+            // CreateDirectoryAndFile();
+            string callingDomainName = AppDomain.CurrentDomain.FriendlyName;//Thread.GetDomain().FriendlyName;
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+            AppDomain ad = AppDomain.CreateDomain("SQL Connect");
+            ProxyObject obj = (ProxyObject)ad.CreateInstanceFromAndUnwrap(basePath+callingDomainName, "TestManager.ProxyObject");
+            try
             {
-                if(psObject != null)
+       
+                obj.LoadAssembly("c:\\TestManager\\TestManager\\Common\\bin\\Debug\\Common.dll");
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                process_log("!!! 找不到 Common.dll");
+                return job_list;
+            }
+            Object[] p = new object[]{"Server=DESKTOP-VD92848;DataBase=SIT_TEST;User Id=edison;Password=123;"};
+            //建立一个连接数据库的对象
+            object result = obj.MyInvoke("Conn",p);
+            // job_list[0] = result.ToString();
+            // process_log(result.ToString());
+
+            // 使用 List 的 Add 方法來添加新的字串
+            // List<string> tempList = job_list.ToList();
+            // tempList.Add(result.ToString());
+            // job_list = tempList.ToArray();
+            if(result != null)
+            {
+               string item = result.ToString(); 
+                // 使用逗號來拆分字串，並去除空白
+                job_list = item.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+
+                // 遍歷拆分後的結果，去除每個元素的空白
+                for (int i = 0; i < job_list.Length; i++)
                 {
-                    // 新增一個 job 到 Job_List
-                    Array.Resize(ref job_list, job_list.Length + 1);
-                    job_list[job_list.Length - 1] = psObject.ToString();
-                }
-                else
-                {
-                    runspace.Close();
-                    return null;
+                    job_list[i] = job_list[i].Trim();
+                    process_log(job_list[i]);
                 }
             }
-        }    
-        catch (Exception ex)
-        {
-            process_log(ex.Message);
-            runspace.Close();
-            return null;
-        }
-
-            runspace.Close();
+            AppDomain.Unload(ad);
+            obj = null;
             return job_list;
         }
 
@@ -133,6 +145,28 @@ namespace TestManager
             runspace.Close();
             return;
         }
+
+            runspace.Close();
+            return;
+        }
+        // ***** upload a program from FTP *****
+        static void FTP_Upload()
+        {
+            Runspace runspace = RunspaceFactory.CreateRunspace();
+            runspace.Open();
+            Pipeline pipeline = runspace.CreatePipeline();
+
+            try
+            {
+                pipeline.Commands.AddScript(testPath+"Upload.ps1");
+                var result = pipeline.Invoke();
+            }    
+            catch (Exception ex)
+            {
+                process_log(ex.Message);
+                runspace.Close();
+                return;
+            }
 
             runspace.Close();
             return;
@@ -204,6 +238,7 @@ namespace TestManager
             ProxyObject obj = (ProxyObject)ad.CreateInstanceFromAndUnwrap(basePath+callingDomainName, "TestManager.ProxyObject");
             try
             {
+       
                 obj.LoadAssembly("c:\\TestManager\\TestManager\\Common\\bin\\Debug\\Common.dll");
             }
             catch (System.IO.FileNotFoundException)
@@ -212,7 +247,7 @@ namespace TestManager
                 return false;
             }
             Object[] p = new object[]{dllPath};
-            obj.Invoke("RunTestItem",p);
+            obj.MyInvoke("RunTestItem",p);
             // process_log("             Invoke .Setup()");
             // obj.Invoke("Setup", p);
             // process_log("             Invoke .Run()");
@@ -232,13 +267,18 @@ namespace TestManager
 
         static void Main(string[] args)
         {
-            string[] Job_List;
+            string[] Job_List = null;
             int job_index;
             DateTime startTime, endTime;
             TimeSpan timeSpan;
             do {            
                 // step 1. Listening job status from DB, if (job_staus=new_) then get the Job_List
                 Job_List = Get_Job();
+foreach (string item in Job_List)
+{
+    process_log(item);
+}
+                //Job_List[0] = "Test_Collection.dll";
                 if(Job_List == null)
                 {
                     // process_log("No job on DB");
@@ -247,9 +287,8 @@ namespace TestManager
                 } 
                 else if (Job_List[0] == "Unconnected_")
                 {
-                    process_log("!!! Wait 3 seconds for the network to connect");
                     process_log("!!! Refer to Get_Job_process.log");
-                    Thread.Sleep(3000);
+                    // Thread.Sleep(3000);
                     continue;
                 }    
                 process_log("<<Step 1>> Got "+Job_List.Length.ToString()+" items in total");
@@ -288,17 +327,20 @@ namespace TestManager
                     }
                 }
 
-                // step 4. Test item 測試結束，把job status改為completed_
-                process_log("<<Step 4>> 測試結束，把job status改為completed_");
+                // step 4. upload 測試 log files to FTP
+                process_log("<<Step 4>> upload 測試 log files to FTP");
+                FTP_Upload();
+
+                // step 5. Test item 測試結束，把job status改為completed_
+                process_log("<<Step 5>> 測試結束，把job status改為completed_");
                 while(!Update_Job_Status())
                 {
-                    process_log("!!! Wait 3 seconds for the network to connect");
                     process_log("!!! Refer to Update_Job_Status_process.log");
-                    Thread.Sleep(3000);
+                    // Thread.Sleep(3000);
                 }
 
                 // step 5. Job_List的PowerShell程式都完成，繼續Listening job status
-                process_log("<<Step 5>> Job_List 的測項完成，Keep listening job status");
+                process_log("<<Step 6>> Job_List 的測項完成，Keep listening job status");
                 endTime = DateTime.Now;
                 timeSpan = endTime - startTime;
                 // 输出时间间隔
@@ -320,7 +362,7 @@ namespace TestManager
         {
             assembly = Assembly.LoadFile(myDllPath);
         }
-        public bool Invoke(string methodName, params Object[] args)
+        public object MyInvoke(string methodName, params Object[] args)
         {
             if (assembly == null)
                 return false;
@@ -333,8 +375,8 @@ namespace TestManager
             if (method == null)
                 return false;
             Object obj = Activator.CreateInstance(tp);
-            method.Invoke(obj, args);
-            return true;
+            object re = method.Invoke(obj, args);
+            return re;
         }
     }    
 }

@@ -1,27 +1,105 @@
-[2023/11/3 PM 04:27:23] <<Step 1>> Got 1 items in total
-[2023/11/3 PM 04:27:23] <<Step 2>> Download Job_List items
-[2023/11/3 PM 04:27:24] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
-[2023/11/3 PM 04:27:24]   Item[1] -> 執行 DLL
-[2023/11/3 PM 04:27:24]              C:\TestManager\Download\TestItem_all.dll
-[2023/11/3 PM 04:27:24] 81
-[2023/11/3 PM 04:27:24]              c:\TestManager\Download\TestItem1.dll
-[2023/11/3 PM 04:27:24] Gener!!! TestItem1.log
-[2023/11/3 PM 04:27:24] TestItem1
-[2023/11/3 PM 04:27:24] 11
-[2023/11/3 PM 04:28:08] Gener!!! c:\TestManager\Download\xxxxxxxxxx.log.log
-[2023/11/3 PM 04:28:08] c:\TestManager\Download\xxxxxxxxxx.log Run.log
-[2023/11/3 PM 04:28:08] 12
-[2023/11/3 PM 04:28:08] Gener!!! TestItem1.log
-[2023/11/3 PM 04:28:08] TestItem1
-[2023/11/3 PM 04:28:08] 13
-[2023/11/3 PM 04:28:08] Gener!!! TestItem1.log
-[2023/11/3 PM 04:28:08] TestItem1
-[2023/11/3 PM 04:28:08] 14
-[2023/11/3 PM 04:28:08] 82
-[2023/11/3 PM 04:28:08] 83
-[2023/11/3 PM 04:28:08] 84
-[2023/11/3 PM 04:28:08] <<Step 4>> 測試結束，把job status改為completed_
-[2023/11/3 PM 04:28:08] <<Step 5>> Job_List 的測項完成，Keep listening job status
-[2023/11/3 PM 04:28:08] 執行花費時間: 0分鐘 44秒
-[2023/11/3 PM 04:28:08] =================Completed================
-[2023/11/3 PM 04:28:26] **** Exit ****
+[2023/11/6 PM 04:49:12] Test_Collection.dll
+[2023/11/6 PM 04:49:12] <<Step 1>> Got 1 items in total
+[2023/11/6 PM 04:49:12] <<Step 2>> Download Job_List items
+[2023/11/6 PM 04:49:13] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/6 PM 04:49:13]   Item[1] -> 執行 DLL
+[2023/11/6 PM 04:49:13]              c:\TestManager\CommonLibs\TestItem1.dll
+[2023/11/6 PM 04:49:16]              c:\TestManager\CommonLibs\Test3.dll
+[2023/11/6 PM 04:49:19]              c:\TestManager\CommonLibs\TestItem2.dll
+[2023/11/6 PM 04:49:21] <<Step 4>> upload 測試 log files to FTP
+[2023/11/6 PM 04:49:21] <<Step 5>> 測試結束，把job status改為completed_
+[2023/11/6 PM 04:49:21] <<Step 6>> Job_List 的測項完成，Keep listening job status
+[2023/11/6 PM 04:49:21] 執行花費時間: 0分鐘 7秒
+[2023/11/6 PM 04:49:21] =================Completed================
+[2023/11/6 PM 04:53:56] Test_Collection.dll
+[2023/11/6 PM 04:53:56] <<Step 1>> Got 1 items in total
+[2023/11/6 PM 04:53:56] <<Step 2>> Download Job_List items
+[2023/11/6 PM 04:53:57] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/6 PM 04:53:57]   Item[1] -> 執行 DLL
+[2023/11/6 PM 04:53:57]              c:\TestManager\CommonLibs\TestItem1.dll
+[2023/11/6 PM 04:54:00]              c:\TestManager\CommonLibs\Test3.dll
+[2023/11/6 PM 04:54:03]              c:\TestManager\CommonLibs\TestItem2.dll
+[2023/11/6 PM 04:54:05] <<Step 4>> upload 測試 log files to FTP
+[2023/11/6 PM 04:54:05] <<Step 5>> 測試結束，把job status改為completed_
+[2023/11/6 PM 04:54:05] <<Step 6>> Job_List 的測項完成，Keep listening job status
+[2023/11/6 PM 04:54:05] 執行花費時間: 0分鐘 7秒
+[2023/11/6 PM 04:54:05] =================Completed================
+[2023/11/6 PM 04:54:19] Test_Collection.dll
+[2023/11/6 PM 04:54:19] <<Step 1>> Got 1 items in total
+[2023/11/6 PM 04:54:19] <<Step 2>> Download Job_List items
+[2023/11/6 PM 04:54:19] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/6 PM 04:54:19]   Item[1] -> 執行 DLL
+[2023/11/6 PM 04:54:19]              c:\TestManager\CommonLibs\TestItem1.dll
+[2023/11/6 PM 04:54:22]              c:\TestManager\CommonLibs\Test3.dll
+[2023/11/6 PM 04:54:25]              c:\TestManager\CommonLibs\TestItem2.dll
+[2023/11/6 PM 04:54:27] <<Step 4>> upload 測試 log files to FTP
+[2023/11/6 PM 04:54:27] <<Step 5>> 測試結束，把job status改為completed_
+[2023/11/6 PM 04:54:27] <<Step 6>> Job_List 的測項完成，Keep listening job status
+[2023/11/6 PM 04:54:27] 執行花費時間: 0分鐘 7秒
+[2023/11/6 PM 04:54:27] =================Completed================
+[2023/11/6 PM 04:55:03] Test_Collection.dll
+[2023/11/6 PM 04:55:03] <<Step 1>> Got 1 items in total
+[2023/11/6 PM 04:55:03] <<Step 2>> Download Job_List items
+[2023/11/6 PM 04:55:04] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/6 PM 04:55:04]   Item[1] -> 執行 DLL
+[2023/11/6 PM 04:55:04]              c:\TestManager\CommonLibs\TestItem1.dll
+[2023/11/6 PM 04:55:06]              c:\TestManager\CommonLibs\Test3.dll
+[2023/11/6 PM 04:55:10]              c:\TestManager\CommonLibs\TestItem2.dll
+[2023/11/6 PM 04:55:11] <<Step 4>> upload 測試 log files to FTP
+[2023/11/6 PM 04:55:11] <<Step 5>> 測試結束，把job status改為completed_
+[2023/11/6 PM 04:55:11] <<Step 6>> Job_List 的測項完成，Keep listening job status
+[2023/11/6 PM 04:55:11] 執行花費時間: 0分鐘 7秒
+[2023/11/6 PM 04:55:11] =================Completed================
+[2023/11/6 PM 04:55:24] Test_Collection.dll
+[2023/11/6 PM 04:55:24] <<Step 1>> Got 1 items in total
+[2023/11/6 PM 04:55:24] <<Step 2>> Download Job_List items
+[2023/11/6 PM 04:55:25] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/6 PM 04:55:25]   Item[1] -> 執行 DLL
+[2023/11/6 PM 04:55:25]              c:\TestManager\CommonLibs\TestItem1.dll
+[2023/11/6 PM 04:55:27]              c:\TestManager\CommonLibs\Test3.dll
+[2023/11/6 PM 04:55:31]              c:\TestManager\CommonLibs\TestItem2.dll
+[2023/11/6 PM 04:55:32] <<Step 4>> upload 測試 log files to FTP
+[2023/11/6 PM 04:55:32] <<Step 5>> 測試結束，把job status改為completed_
+[2023/11/6 PM 04:55:32] <<Step 6>> Job_List 的測項完成，Keep listening job status
+[2023/11/6 PM 04:55:32] 執行花費時間: 0分鐘 7秒
+[2023/11/6 PM 04:55:32] =================Completed================
+[2023/11/6 PM 04:59:27] Test_Collection.dll
+[2023/11/6 PM 04:59:27] <<Step 1>> Got 1 items in total
+[2023/11/6 PM 04:59:27] <<Step 2>> Download Job_List items
+[2023/11/6 PM 04:59:28] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/6 PM 04:59:28]   Item[1] -> 執行 DLL
+[2023/11/6 PM 04:59:28]              c:\TestManager\CommonLibs\TestItem1.dll
+[2023/11/6 PM 04:59:31]              c:\TestManager\CommonLibs\Test3.dll
+[2023/11/6 PM 04:59:34]              c:\TestManager\CommonLibs\TestItem2.dll
+[2023/11/6 PM 04:59:35] <<Step 4>> upload 測試 log files to FTP
+[2023/11/6 PM 04:59:36] <<Step 5>> 測試結束，把job status改為completed_
+[2023/11/6 PM 04:59:36] <<Step 6>> Job_List 的測項完成，Keep listening job status
+[2023/11/6 PM 04:59:36] 執行花費時間: 0分鐘 7秒
+[2023/11/6 PM 04:59:36] =================Completed================
+[2023/11/6 PM 04:59:57] Test_Collection.dll
+[2023/11/6 PM 04:59:57] <<Step 1>> Got 1 items in total
+[2023/11/6 PM 04:59:57] <<Step 2>> Download Job_List items
+[2023/11/6 PM 04:59:58] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/6 PM 04:59:58]   Item[1] -> 執行 DLL
+[2023/11/6 PM 04:59:58]              c:\TestManager\CommonLibs\TestItem1.dll
+[2023/11/6 PM 05:00:01]              c:\TestManager\CommonLibs\Test3.dll
+[2023/11/6 PM 05:00:04]              c:\TestManager\CommonLibs\TestItem2.dll
+[2023/11/6 PM 05:00:05] <<Step 4>> upload 測試 log files to FTP
+[2023/11/6 PM 05:00:06] <<Step 5>> 測試結束，把job status改為completed_
+[2023/11/6 PM 05:00:06] <<Step 6>> Job_List 的測項完成，Keep listening job status
+[2023/11/6 PM 05:00:06] 執行花費時間: 0分鐘 7秒
+[2023/11/6 PM 05:00:06] =================Completed================
+[2023/11/6 PM 05:02:39] Test_Collection.dll
+[2023/11/6 PM 05:02:39] Test_Collection.dll
+[2023/11/6 PM 05:02:39] <<Step 1>> Got 1 items in total
+[2023/11/6 PM 05:02:39] <<Step 2>> Download Job_List items
+[2023/11/6 PM 05:02:40] <<Step 3>> 依序執行Job_List的[*.ps1, *.dll]程式
+[2023/11/6 PM 05:02:40]   Item[1] -> 執行 DLL
+[2023/11/6 PM 05:02:40]              c:\TestManager\CommonLibs\TestItem1.dll
+[2023/11/6 PM 05:02:43]              c:\TestManager\CommonLibs\Test3.dll
+[2023/11/6 PM 05:02:46]              c:\TestManager\CommonLibs\TestItem2.dll
+[2023/11/6 PM 05:02:48] <<Step 4>> upload 測試 log files to FTP
+[2023/11/6 PM 05:02:48] <<Step 5>> 測試結束，把job status改為completed_
+[2023/11/6 PM 05:02:48] <<Step 6>> Job_List 的測項完成，Keep listening job status
+[2023/11/6 PM 05:02:48] 執行花費時間: 0分鐘 7秒
+[2023/11/6 PM 05:02:48] =================Completed================

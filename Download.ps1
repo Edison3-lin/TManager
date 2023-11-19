@@ -95,7 +95,7 @@ $password = "123"
 # $remoteFile = @("abt1.ps1","abt2.ps1","abt3.ps1")
 
 # Specify the local destination for the downloaded file
-$localPath = "c:\TestManager\Download\"
+$localPath = "c:\TestManager\ItemDownload\"
 
 # Create a WebClient object and set credentials
 $webClient = New-Object System.Net.WebClient

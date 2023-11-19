@@ -1,0 +1,754 @@
+<PwrTestLog date="11/06/2023" time="17:02:43" filename="C:\TestManager\CommonLibs\pwrtestlog.xml">
+  <SystemInformation>
+    <ComputerName>DESKTOP-VD92848</ComputerName>
+    <OSBuildNumber>22621</OSBuildNumber>
+    <SystemManufacturer>Acer</SystemManufacturer>
+    <SystemProductName>Predator PH16-71</SystemProductName>
+    <BIOSVersion>V1.15</BIOSVersion>
+    <BIOSReleaseDate>09/07/2023</BIOSReleaseDate>
+    <ProcessorCount>32</ProcessorCount>
+    <ProcessorPackageCount>1</ProcessorPackageCount>
+  </SystemInformation>
+  <SYSTEM_POWER_CAPABILITIES>
+    <SystemS1StateSupported>0</SystemS1StateSupported>
+    <SystemS2StateSupported>0</SystemS2StateSupported>
+    <SystemS3StateSupported>1</SystemS3StateSupported>
+    <SystemS4StateSupported>1</SystemS4StateSupported>
+    <SystemS5StateSupported>1</SystemS5StateSupported>
+    <WakeAlarmPresent>0</WakeAlarmPresent>
+    <AcOnLineWakeSupported>0</AcOnLineWakeSupported>
+    <RtcWakeSupported>4</RtcWakeSupported>
+    <FastSystemS4>1</FastSystemS4>
+    <VideoDimPresent>1</VideoDimPresent>
+    <HiberFilePresent>1</HiberFilePresent>
+    <AoAc>0</AoAc>
+  </SYSTEM_POWER_CAPABILITIES>
+  <SYSTEM_POWER_INFORMATION>
+    <MaxIdlenessAllowed>0</MaxIdlenessAllowed>
+    <Idleness>87</Idleness>
+    <TimeRemaining>4294967295</TimeRemaining>
+    <CoolingMode>0</CoolingMode>
+  </SYSTEM_POWER_INFORMATION>
+  <SYSTEM_BATTERY_STATE>
+    <AcOnLine>1</AcOnLine>
+    <BatteryPresent>1</BatteryPresent>
+    <Charging>0</Charging>
+    <Discharging>0</Discharging>
+    <MaxCapacity>87795</MaxCapacity>
+    <RemainingCapacity>87795</RemainingCapacity>
+    <RateOfDrain>0</RateOfDrain>
+    <EstimatedTime>4294967295</EstimatedTime>
+    <DefaultAlert1>3511</DefaultAlert1>
+    <DefaultAlert2>4620</DefaultAlert2>
+  </SYSTEM_BATTERY_STATE>
+  <ProcessorInformation>
+    <IdleStateInformation processor='0'>
+      <InstanceName>PPM_Processor_0</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x1</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='1'>
+      <InstanceName>PPM_Processor_1</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x2</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='2'>
+      <InstanceName>PPM_Processor_2</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x4</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='3'>
+      <InstanceName>PPM_Processor_3</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x8</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='4'>
+      <InstanceName>PPM_Processor_4</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x10</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='5'>
+      <InstanceName>PPM_Processor_5</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x20</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='6'>
+      <InstanceName>PPM_Processor_6</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x40</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='7'>
+      <InstanceName>PPM_Processor_7</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x80</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='8'>
+      <InstanceName>PPM_Processor_8</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x100</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='9'>
+      <InstanceName>PPM_Processor_9</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x200</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='10'>
+      <InstanceName>PPM_Processor_10</InstanceName>
+      <TargetState>0</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x400</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='11'>
+      <InstanceName>PPM_Processor_11</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x800</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='12'>
+      <InstanceName>PPM_Processor_12</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x1000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='13'>
+      <InstanceName>PPM_Processor_13</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x2000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='14'>
+      <InstanceName>PPM_Processor_14</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x4000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='15'>
+      <InstanceName>PPM_Processor_15</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x8000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='16'>
+      <InstanceName>PPM_Processor_16</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x10000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='17'>
+      <InstanceName>PPM_Processor_17</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x20000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='18'>
+      <InstanceName>PPM_Processor_18</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x40000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='19'>
+      <InstanceName>PPM_Processor_19</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x80000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='20'>
+      <InstanceName>PPM_Processor_20</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x100000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='21'>
+      <InstanceName>PPM_Processor_21</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x200000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='22'>
+      <InstanceName>PPM_Processor_22</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x400000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='23'>
+      <InstanceName>PPM_Processor_23</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x800000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='24'>
+      <InstanceName>PPM_Processor_24</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x1000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='25'>
+      <InstanceName>PPM_Processor_25</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x2000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='26'>
+      <InstanceName>PPM_Processor_26</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x4000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='27'>
+      <InstanceName>PPM_Processor_27</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x8000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='28'>
+      <InstanceName>PPM_Processor_28</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x10000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='29'>
+      <InstanceName>PPM_Processor_29</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x20000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='30'>
+      <InstanceName>PPM_Processor_30</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x40000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='31'>
+      <InstanceName>PPM_Processor_31</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x80000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+  </ProcessorInformation>
+  <ProcessorInformation>
+  </ProcessorInformation>
+  <ProcessorInformation>
+    <IdleStateInformation processor='0'>
+      <InstanceName>PPM_Processor_0</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x1</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='1'>
+      <InstanceName>PPM_Processor_1</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x2</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='2'>
+      <InstanceName>PPM_Processor_2</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x4</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='3'>
+      <InstanceName>PPM_Processor_3</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x8</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='4'>
+      <InstanceName>PPM_Processor_4</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x10</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='5'>
+      <InstanceName>PPM_Processor_5</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x20</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='6'>
+      <InstanceName>PPM_Processor_6</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x40</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='7'>
+      <InstanceName>PPM_Processor_7</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x80</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='8'>
+      <InstanceName>PPM_Processor_8</InstanceName>
+      <TargetState>0</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x100</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='9'>
+      <InstanceName>PPM_Processor_9</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x200</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='10'>
+      <InstanceName>PPM_Processor_10</InstanceName>
+      <TargetState>0</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x400</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='11'>
+      <InstanceName>PPM_Processor_11</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x800</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='12'>
+      <InstanceName>PPM_Processor_12</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x1000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='13'>
+      <InstanceName>PPM_Processor_13</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x2000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='14'>
+      <InstanceName>PPM_Processor_14</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x4000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='15'>
+      <InstanceName>PPM_Processor_15</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x8000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='16'>
+      <InstanceName>PPM_Processor_16</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x10000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='17'>
+      <InstanceName>PPM_Processor_17</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x20000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='18'>
+      <InstanceName>PPM_Processor_18</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x40000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='19'>
+      <InstanceName>PPM_Processor_19</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x80000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='20'>
+      <InstanceName>PPM_Processor_20</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x100000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='21'>
+      <InstanceName>PPM_Processor_21</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x200000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='22'>
+      <InstanceName>PPM_Processor_22</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x400000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='23'>
+      <InstanceName>PPM_Processor_23</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x800000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='24'>
+      <InstanceName>PPM_Processor_24</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x1000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='25'>
+      <InstanceName>PPM_Processor_25</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x2000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='26'>
+      <InstanceName>PPM_Processor_26</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x4000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='27'>
+      <InstanceName>PPM_Processor_27</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x8000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='28'>
+      <InstanceName>PPM_Processor_28</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x10000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='29'>
+      <InstanceName>PPM_Processor_29</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x20000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='30'>
+      <InstanceName>PPM_Processor_30</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x40000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+    <IdleStateInformation processor='31'>
+      <InstanceName>PPM_Processor_31</InstanceName>
+      <TargetState>2</TargetState>
+      <Type>0</Type>
+      <TargetProcessors format="hex">0x80000000</TargetProcessors>
+      <IdleStates>
+        <IdleState number="0" latency="1us" power="1000mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C1" />
+        <IdleState number="1" latency="127us" power="350mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C2" />
+        <IdleState number="2" latency="1048us" power="200mW" TimeCheck="50ms" PromotePercent="60" DemotePercent="40" StateType="C3" />
+      </IdleStates>
+    </IdleStateInformation>
+  </ProcessorInformation>
+</PwrTestLog>
